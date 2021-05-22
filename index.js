@@ -7,7 +7,7 @@ const resultado = document.getElementById('resultado');
 const calculoDeMoneda = () =>{
     switch (tipoDeCambio.value){
     case 'usd':
-        resultado.textContent = inputCantidad.value * 148;
+        resultado.textContent = inputCantidad.value * 0,011;
         break;
     case 'mxn':
         resultado.textContent = inputCantidad.value * 0.21;
@@ -22,8 +22,12 @@ const calculoDeMoneda = () =>{
         resultado = "";
     }
     }
-    
-    
+
+tipoDeCambio.addEventListener('input', calculoDeMoneda);
+inputCantidad.addEventListener('input', calculoDeMoneda);
+
+
+//EJEMPLO CON CONDICIONALES
 /*
 const calculoDeMoneda = () =>{
 if(tipoDeCambio.value === 'usd'){
@@ -39,7 +43,3 @@ if(tipoDeCambio.value === 'usd'){
 }
 };
 */
-
-tipoDeCambio.addEventListener('input', calculoDeMoneda);
-inputCantidad.addEventListener('input', calculoDeMoneda);
-
