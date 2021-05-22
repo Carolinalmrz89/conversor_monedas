@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <h1>Conversor de Monedas</h1>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Conversor de Monedas</h1>
 
+      <label for="cantidad"
+        >Ingrese la cantidad de pesos argentinos a convertir:</label
+      >
+      <input type="number" name="cantidad" id="cantidad" />
 
-    <label for="cantidad">Ingrese la cantidad de pesos argentinos a convertir:</label>
-    <input type="number" name="cantidad" id="cantidad">
+      <label for="tipoDeCambio">Tipo de Cambio</label>
 
-    <label for="tipoDeCambio">Tipo de Cambio</label>
-
-    <select name="tipoDeCambio" id="tipoDeCambio">
-
+      <select name="tipoDeCambio" id="tipoDeCambio">
         <option value="mxn">Peso Mexicano</option>
         <option value="usd">Dolar</option>
         <option value="col">Peso Colombiano</option>
         <option value="pen">Soles</option>
+      </select>
 
-    </select>
-
-    <div id="resultado"></div>
-
+      <div id="resultado"></div>
+    </div>
 
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
